@@ -1,0 +1,46 @@
+.imglink_products
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-auto-rows: minmax(100px, auto)
+  grid-column-gap: 1em
+  grid-row-gap: 1em
+  
+  .productItem
+    position: relative
+    border: 1px solid #DCDCDC
+    background: #f7fafe
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.3)
+    padding: 5px 5px   
+
+    &__img
+      overflow: hidden 
+      
+      img   
+        width: 100%        
+        border: 1px solid #eee
+        transition-duration: .2s
+        
+        &:hover
+          -o-transform: scale(1.08)
+          -ms-transform: scale(1.08)
+          -moz-transform: scale(1.08)
+          -webkit-transform: scale(1.08)
+          transform: scale(1.08)
+
+    &__text
+      display: block
+      position: absolute
+      left: 0
+      bottom: 5px
+      width: 100%
+ 
+      h3
+        font-size: 14px
+        text-align: center
+        color: white
+        line-height: 1.5
+        padding: 0.5em 0
+        margin: 0 5px
+        background-color: rgba(74,170,210,0.9)
+        letter-spacing: 1px
+  
