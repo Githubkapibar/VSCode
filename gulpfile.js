@@ -8,7 +8,7 @@ browserSync = require('browser-sync').create();
 // const { src, dest } = require('gulp');
 
 function css_sass(done) {
-   gulp.src('sass/**/*.sass')
+   gulp.src('app/sass/**/*.sass')
     .pipe(sourcemaps.init())
     .pipe(sass({
         errorLogToConsole: true, 
@@ -22,22 +22,22 @@ function css_sass(done) {
     // .pipe(rename('main.css'))
     // .pipe(rename({suffix: '.min'}))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('css/'))
+    .pipe(gulp.dest('app/css/'))
     .pipe(browserSync.stream());
     done();
 }
 
-function jsLibs(done) {
-    gulp.src(['libs/jquery.min.js', 'libs/typed.min.js'])
-    .pipe(concat('scripts.min.js'))
-    .pipe(gulp.dest('js'));
-    done();
-}
+// function jsLibs(done) {
+//     gulp.src(['libs/jquery.min.js', 'libs/typed.min.js'])
+//     .pipe(concat('scripts.min.js'))
+//     .pipe(gulp.dest('js'));
+//     done();
+// }
 
 function brSync(done) {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "app"
         },
         port: 3000
     });
@@ -50,9 +50,9 @@ function brReload(done) {
 }
 
 function watchSass() {
-    gulp.watch('sass/**/*.sass', css_sass);
-    gulp.watch('js/**/*.js', brReload);
-    gulp.watch("./**/*.html", brReload);
+    gulp.watch('app/sass/**/*.sass', css_sass);
+    gulp.watch('app/js/**/*.js', brReload);
+    gulp.watch("app/*.html", brReload);
 }
 
 // gulp.task()
