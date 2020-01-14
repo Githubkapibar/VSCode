@@ -1,42 +1,41 @@
 @import '_abstracts/vars'
 
-.header-top
+.header_top
     margin: 0 auto
     padding: 0 15px   // So as not to stick the sides of the divice > 1100
     max-width: 1100px
     width: 100%  
     display: flex  
 
-#checkbox-menu, 
-.toggle   
+#header_menu__checkbox, 
+.header_menu__toggle   
     display: none
 
 label
     width: 100%
 
-.menu 
+.header_menu__list 
     padding: 0
     margin: 0
     height: 50px
     display: flex
     flex-direction: row
     justify-content: space-around
-    align-items: center
-    list-style-type: none
+    align-items: center   
 
-    li
-        a
-            display: block
-            // min-width: 100px
-            color: #000000
-            text-decoration: none
-            align-self: center
-            font-size: 13px
-            padding: 10px 15px
-            transition: background .2s linear
-
-            &:hover
-                background: $menu-color
+    a
+        display: block
+        // min-width: 100px
+        color: #000000
+        text-decoration: none
+        align-self: center
+        font-size: 13px
+        padding: 10px 15px
+        transition: background .2s linear
+        border: 1px solid transparent
+        
+        &:hover
+                border-color: $menu-color
                 border-radius: 3px            
             
 

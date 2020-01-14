@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gulp</title>
+    <link rel="stylesheet" href="css/libs.css">			
+	<link rel="stylesheet" href="css/main.css">		
+</head>
+<body>
+    <div class="wrapper">		
+      	
+        <header class="header">
+            <div class="header_top">
+               
+              <div class="header_logo"><a href="index.html">SiteLogo</a></div>
+              
+               <nav class="header_menu">
+                  <input type="checkbox" id="header_menu__checkbox">
+                  <label for="header_menu__checkbox">
+                      <ul class="header_menu__list touch">							
+                          <li><a href="gulp.html">Gulp</a></li>
+                          <li><a href="web.html">Верстка</a></li>
+                          <li><a href="#">VS Code</a></li>
+                          <li><a href="#">.Net Core</a></li>
+                          <li><a href="#">Java Script</a></li>
+                          <li><a href="#">Vue Js</a></li>
+                          <li><a href="#">Getting Started</a></li>
+                      </ul>
+                      <span class="header_menu__toggle">☰</span>	
+                  </label>
+              </nav>
+          </div>
+        </header>
+        
+      <main>
+          <section class="section-item1">
+              
+              <div>
+                <div class="topic">
+                    <h3>
+                        <span>gulp 4</span>
+                    </h3>
+                </div>                 
+                  <ul>
+                      <li>Скачиваем и устанавливаем Node</li>
+                      <li>Скачиваем и устанавливаем Git</li>
+                      <li>Проверка версии node --version, npm --version, npx --version</li>
+                      <li>Устанавливаем gulp глобально: npm install --global gulp-cli</li>
+                      <li>Проверяем версию gulp --version</li>
+                      <li>Создаём package.json (описывает установленые пакеты): npm init</li>
+                      <li>Проверяем версию gulp --version</li>
+                  </ul>      
+              </div>
+              <div>
+                  <h4>Tasks gulp</h4>
+                  <ul>
+                      <li>Создаём файл gulpfile.js</li>
+                      <li>Создаём структуру сайта(папки)
+                      <li>нельзя называть функции и таски одинаково</li>
+                      <p>Структура gulp task:
+                          function nameTask(done) {
+                              <!-- place code -->
+                              done();
+                          }
+          
+                          exports.default = nameTask;  - запустит таск по умолчанию при команде gulp
+                          exports.nameTask = nameTask; - запустит таск по названию: gulp nametask
+                      </p></li>
+                      <li>
+                           
+                      </li>
+                  </ul>
+                  <p>При работе с разными технологиями не забываем добовлять синтаксис: html, css, sass, gulp ...</p>
+              </div>
+          
+              <div>
+                  <h4>Плагины Gulp</h4>
+                  <ul>
+                      <li>Rename: npm i gulp-rename --save-dev(rename = require('gulp-rename'))
+                          <b></b>
+                      </li>
+                      <li>Sass: npm i gulp-sass --save-dev(sass = require('gulp-sass')</li>
+                      <li>Autoprefixer: npm i gulp-autoprefixer --save-dev(autoprefixer = require('gulp-autoprefixer')</li>
+                      <li>Concat: npm i gulp-concat --save-dev</li>
+                      <li></li>
+                  </ul>
+              </div>
+             
+          </section>
+          <section class="section-item2">
+              <p>section-item2</p>
+          </section>
+          <section class="section-item3">
+              <p>section-item3</p>
+          </section> 
+      </main>
+      <aside class="site-aside">	
+          <p>site-aside</p>
+      </aside>           		
+ 
+      <footer class="site-footer">        	
+          <p>site-footer</p>
+      </footer>
+      
+  </div>		
+    
+      <script src="js/libs.min.js"></script>		
+      <script src="js/common.js"></script>s
+      <script src="js/app.js"></script>
+      <script src="https://kit.fontawesome.com/8c5f8983b2.js" crossorigin="anonymous"></script>
+</body>
+</html>

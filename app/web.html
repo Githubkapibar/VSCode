@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web</title>
+    <link rel="stylesheet" href="css/libs.css">			
+	<link rel="stylesheet" href="css/main.css">		
+</head>
+<body>
+    <div class="wrapper">		
+      	
+        <header class="header">
+            <div class="header_top">
+               
+              <div class="header_logo"><a href="#">SiteLogo</a></div>
+              
+               <nav class="header_menu">
+                  <input type="checkbox" id="header_menu__checkbox">
+                  <label for="header_menu__checkbox">
+                      <ul class="header_menu__list touch">							
+                          <li><a href="gulp.html">Gulp</a></li>
+                          <li><a href="web.html">Верстка</a></li>
+                          <li><a href="#">VS Code</a></li>
+                          <li><a href="#">.Net Core</a></li>
+                          <li><a href="#">Java Script</a></li>
+                          <li><a href="#">Vue Js</a></li>
+                          <li><a href="#">Getting Started</a></li>
+                      </ul>
+                      <span class="header_menu__toggle">☰</span>	
+                  </label>
+              </nav>
+          </div>
+        </header>
+        
+      <main>
+          <section class="section-item1">              
+              <div class="git">
+                  <h1>Git</h1>
+                  <p>
+
+                      Как исключит папку node_modules из потенциального добавления untracked файлов. 
+                      Создаем файл .gitignore и записуем туда название папки.
+                      Ну если  node_modules уже в репозитории то нужно сначала её оттуда исключить, 
+                      а потом она заново туда не будет пытаться проникнуть. 
+                      Попробуйте сделать:
+                      
+                      git rm -r --cached node_modules
+                      
+                      </p>
+              </div>       
+              
+          
+                  <a href="https://github.com/kapibar/VSCode.git">Go to page GitHub</a>
+          </section>
+          <section class="section-item2">
+              <p>section-item2</p>
+          </section>
+          <section class="section-item3">
+              <p>section-item3</p>
+          </section> 
+      </main>
+      <aside class="site-aside">	
+          <p>site-aside</p>
+      </aside>           		
+ 
+      <footer class="site-footer">        	
+          <p>site-footer</p>
+      </footer>
+      
+  </div>		
+    
+      <script src="js/libs.min.js"></script>		
+      <script src="js/common.js"></script>
+      <script src="https://kit.fontawesome.com/8c5f8983b2.js" crossorigin="anonymous"></script>
+</body>
+</html>
